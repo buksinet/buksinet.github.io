@@ -1,0 +1,161 @@
+<?php
+        $DOCUMENT_ROOT=$_SERVER['DOCUMENT_ROOT'];
+        @ $ffp=fopen("$DOCUMENT_ROOT/files/hide.txt",'rb');
+        if(!$ffp)
+		{
+			exit;
+        }else
+		{
+                @ $sstr=fgets($ffp,5);
+                fclose($ffp);
+				if($sstr == 'hide')
+				{
+					exit;
+				}
+        }
+        
+?>
+<?php
+$ip = getenv("REMOTE_ADDR");
+if($ip=='194.85.82.254'){
+//exit();
+}
+?>
+<script language="javascript"><!--
+Md=document;
+Ms=screen;
+Mw=Ms.width;
+Mh=Ms.height;
+//--></script>
+<html>
+<head>
+	<link rel=stylesheet type=text/css href=styles.css>
+
+	<title>:: Бюксы - наличие по городам ::</title>
+
+</head>
+
+<body>
+<table width=100% cellspacing=0 cellpadding=0>
+	<tr >
+		<td colspan=5>
+			<table class=fixed width=100% cellspacing=0 cellpadding=0>
+			<tr>
+				<td height=100 width=162>
+					<img src=pic/hl.jpg hspace=0 vspace=0  height=100 width=162>
+				</td>
+				<script language="javascript"><!--
+					if(Mw==800){
+						Md.write('<td valign=middle width=511 background=pic/800/m.jpg>');
+					}else{Md.write('<td valign=middle width=734 background=pic/m.jpg>');
+					};
+				//--></script>
+				<noscript>
+					<td valign=middle width=734 background=pic/m.jpg>
+				</noscript>
+				<div align=center >
+					<span class=head>buksi.net</span><br>
+					<span class=head>Бюксы лабораторные алюминиевые</span>
+				</div>
+				</td>
+				<td height=100 >
+					<img src=pic/hr.jpg hspace=0 vspace=0 width=103 height=100>
+				</td>
+			</tr>
+
+			</table>
+		</td> 
+	</tr>
+	<tr class=menu valign=middle>
+		<td class=aligned background=pic/menu.jpg width=20% height=30>
+			<div align=center>
+			<a href=index.html><span class=menu>Главная</span></a>
+			</div>
+			
+		</td>
+		<td class=aligned background=pic/menu.jpg width=20%> 
+			<div align=center>
+		
+			<a href=prod.html><span class=menu>Характеристики и цены</span></a>
+			</div>
+		</td>
+		<td class=aligned background=pic/menu.jpg width=20%>
+			<div align=center>
+			
+			<a href=nal.html><span class=menu>Наличие по городам</span></a>
+			</div>
+		</td>
+		<td class=aligned background=pic/menu.jpg width=20%>
+			<div align=center>
+		
+			<a href=order.html><span class=menu>Заказать</span></a>
+			</div>
+		</td>
+		<td class=aligned background=pic/menu.jpg width=20%>
+			<div align=center>
+			
+			<a href=contact.html><span class=menu>Контакты</span></a>
+			</div>
+		</td>
+	</tr>
+	<tr >
+	<td class=marg colspan=5>
+			<div align=center>
+		<br>
+		<h2>В данный момент страница находится в разработке	  </h2>
+		</div>
+
+<tr class=cur valign=center>
+	<td  colspan=2 height=31>
+	<div align=center>
+	Последнее обновление:  	  <?php
+        $DOCUMENT_ROOT=$_SERVER['DOCUMENT_ROOT'];
+        @ $fp=fopen("$DOCUMENT_ROOT/files/update.txt",'rb');
+        if(!$fp){echo '24.09.2005';exit;
+        }else{
+                @ $str=fgets($fp,100);
+                if($str!=NULL){echo $str;}else{echo '24.09.2005';};
+                fclose($fp);
+        };
+        
+        ?>
+	</div>
+	</td>
+
+	<td height=31>
+	<div align=center>
+<!-- SpyLOG f:0211 -->
+<script language="javascript"><!--
+Mu="u6854.37.spylog.com";Md=document;Mnv=navigator;Mp=0;
+Md.cookie="b=b";Mc=0;if(Md.cookie)Mc=1;Mrn=Math.random();
+Mn=(Mnv.appName.substring(0,2)=="Mi")?0:1;Mt=(new Date()).getTimezoneOffset();
+Mz="p="+Mp+"&rn="+Mrn+"&c="+Mc+"&t="+Mt;
+if(self!=top){Mfr=1;}else{Mfr=0;}Msl="1.0";
+//--></script><script language="javascript1.1"><!--
+Mpl="";Msl="1.1";Mj = (Mnv.javaEnabled()?"Y":"N");Mz+='&j='+Mj;
+//--></script><script language="javascript1.2"><!-- 
+Msl="1.2";Ms=screen;Mpx=(Mn==0)?Ms.colorDepth:Ms.pixelDepth;
+Mz+="&wh="+Ms.width+'x'+Ms.height+"&px="+Mpx;
+//--></script><script language="javascript1.3"><!--
+Msl="1.3";//--></script><script language="javascript"><!--
+My="";My+="<a href='http://"+Mu+"/cnt?cid=685437&f=3&p="+Mp+"&rn="+Mrn+"' target='_blank'>";
+My+="<img src='http://"+Mu+"/cnt?cid=685437&"+Mz+"&sl="+Msl+"&r="+escape(Md.referrer)+"&fr="+Mfr+"&pg="+escape(window.location.href);
+My+="' border=0 width=88 height=31 alt='SpyLOG'>";
+My+="</a>";Md.write(My);//--></script><noscript>
+<a href="http://u6854.37.spylog.com/cnt?cid=685437&f=3&p=0" target="_blank">
+<img src="http://u6854.37.spylog.com/cnt?cid=685437&p=0" alt='SpyLOG' border='0' width=88 height=31 >
+</a></noscript>
+<!-- SpyLOG -->
+	</div>
+	</td>
+
+	<td  colspan=2>
+	<div align=right>
+	Разработка - <a href=mailto:sclad@pisem.net>menski&nbsp;</a>
+	</div>
+	</td>
+</tr>
+</table>
+
+</body>
+</html>

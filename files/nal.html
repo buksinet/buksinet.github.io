@@ -1,0 +1,512 @@
+<?php
+$ip = getenv("REMOTE_ADDR");
+if($ip=='194.85.82.254'){
+exit();
+}
+?>
+<script language="javascript"><!--
+Md=document;
+Ms=screen;
+Mw=Ms.width;
+Mh=Ms.height;
+//--></script>
+<html>
+<head>
+	<link rel=stylesheet type=text/css href=styles.css>
+
+	<title>:: Бюксы - наличие по городам ::</title>
+
+</head>
+
+<body>
+<table width=100% cellspacing=0 cellpadding=0>
+	<tr >
+		<td colspan=5>
+			<table class=fixed width=100% cellspacing=0 cellpadding=0>
+			<tr>
+				<td height=100 width=162>
+					<img src=pic/hl.jpg hspace=0 vspace=0  height=100 width=162>
+				</td>
+				<script language="javascript"><!--
+					if(Mw==800){
+						Md.write('<td valign=middle width=511 background=pic/800/m.jpg>');
+					}else{Md.write('<td valign=middle width=734 background=pic/m.jpg>');
+					};
+				//--></script>
+				<noscript>
+					<td valign=middle width=734 background=pic/m.jpg>
+				</noscript>
+				<div align=center >
+					<span class=head>buksi.net</span><br>
+					<span class=head>Бюксы лабораторные алюминиевые</span>
+				</div>
+				</td>
+				<td height=100 >
+					<img src=pic/hr.jpg hspace=0 vspace=0 width=103 height=100>
+				</td>
+			</tr>
+
+			</table>
+		</td> 
+	</tr>
+	<tr class=menu valign=middle>
+		<td class=aligned background=pic/menu.jpg width=20% height=30>
+			<div align=center>
+			<a href=index.html><span class=menu>Главная</span></a>
+			</div>
+			
+		</td>
+		<td class=aligned background=pic/menu.jpg width=20%> 
+			<div align=center>
+		
+			<a href=prod.html><span class=menu>Характеристики и цены</span></a>
+			</div>
+		</td>
+		<td class=aligned background=pic/menu.jpg width=20%>
+			<div align=center>
+			
+			<a href=nal.html><span class=menu>Наличие по городам</span></a>
+			</div>
+		</td>
+		<td class=aligned background=pic/menu.jpg width=20%>
+			<div align=center>
+		
+			<a href=order.html><span class=menu>Заказать</span></a>
+			</div>
+		</td>
+		<td class=aligned background=pic/menu.jpg width=20%>
+			<div align=center>
+			
+			<a href=contact.html><span class=menu>Контакты</span></a>
+			</div>
+		</td>
+	</tr>
+	<tr >
+	<td class=marg colspan=5>
+			<div align=center>
+		<br>
+		<h2>Наличие готовых бюкс на дату 	  <?php
+        $DOCUMENT_ROOT=$_SERVER['DOCUMENT_ROOT'];
+        @ $fp=fopen("$DOCUMENT_ROOT/files/update.txt",'rb');
+        if(!$fp){echo '24.09.2005';exit;
+        }else{
+                @ $str=fgets($fp,100);
+                if($str!=NULL){echo $str;}else{echo '24.09.2005';};
+                fclose($fp);
+        };
+        
+        ?></h2>
+		</div>
+	
+		<table class=fixed border=1 bordercolor=black width=100% height=100% cellspacing=0 cellpadding=3>	
+		
+
+<!-------------------------1st raw------------------------------>		
+		<tr>
+			<td class=aligned width=52%>
+				<h4>Тип</h4>	
+			</td>
+
+			<td class=aligned width=12%>
+				<h4>Цена за штуку, российские рубли</h4>
+			</td>
+
+			<td class=aligned width=12%>
+				<h4>в г.Минск, штук</h4>
+			</td>
+
+			<td class=aligned width=12%>
+				<h4>в г.Москва, штук</h4>
+			</td>
+			
+			<td class=aligned width=12%>
+				<h4>в г.Санкт-Петербург, штук</h4>
+			</td>
+		</tr>
+<!-------------------------1st raw------------------------------>
+<!-------------------------2nd raw------------------------------>
+		<tr class=cur>
+			<td class=aligned>
+				<a href=3025.html ><span class=big>30 x 25 (для прибора Литвинова) </span></span></a>	
+			</td>
+
+			<td class=aligned >
+				60
+			</td>
+
+			<td class=aligned>
+				200
+			</td>
+
+			<td class=aligned >
+				-
+			</td>
+			
+			<td class=aligned >
+				-
+			</td>
+		</tr>
+<!-------------------------2nd raw------------------------------>
+<!-------------------------3rd raw------------------------------>
+		<tr>
+			<td class=aligned>
+				
+					<a href=4245.html ><span class=big>42 x 45 (для прибора Литвинова)</span></span></a>
+			</td>
+
+			<td class=aligned>
+				90
+			</td>
+
+			<td class=aligned>
+				100
+			</td>
+
+			<td class=aligned>
+				-
+			</td>
+			
+			<td class=aligned>
+				-
+			</td>
+		</tr>
+<!-------------------------3rd raw------------------------------>
+<!-------------------------4 raw------------------------------>
+		<tr class=cur>
+			<td class=aligned>
+				<a href=5020.html ><span class=big>50 x 20</span></a>	
+			</td>
+
+			<td class=aligned>
+				55
+			</td>
+
+			<td class=aligned>
+				-
+			</td>
+
+			<td class=aligned>
+				-
+			</td>
+			
+			<td class=aligned>
+				-
+			</td>
+		</tr>
+<!-------------------------4 raw------------------------------>
+<!-------------------------5 raw------------------------------>
+		<tr>
+			<td class=aligned>
+			
+				<a href=5037.html ><span class=big>50 x 37 (бюкса лабораторная)</span></a>	
+			</td>
+
+			<td class=aligned>
+				60
+			</td>
+
+			<td class=aligned>
+				2450
+			</td>
+
+			<td class=aligned>
+				-
+			</td>
+			
+			<td class=aligned>
+				100
+			</td>
+		</tr>
+<!-------------------------5 raw------------------------------>
+<!-------------------------6 raw------------------------------>
+		<tr class=cur>
+			<td class=aligned>
+				<a href=5636.html ><span class=big>56 x 36 (чашка пенитрационная)</span></a>	
+			</td>
+
+			<td class=aligned>
+				50
+			</td>
+
+			<td class=aligned>
+				100
+			</td>
+
+			<td class=aligned>
+				-
+			</td>
+			
+			<td class=aligned>
+				100
+			</td>
+		</tr>
+<!-------------------------6 raw------------------------------>
+<!-------------------------7 raw------------------------------>
+		<tr>
+			<td class=aligned>
+			
+				<a href=5240.html ><span class=big>52 x 40 (чашка для пр. Васильева)</span></a>	
+			</td>
+
+			<td class=aligned>
+				50
+			</td>
+
+			<td class=aligned>
+				-
+			</td>
+
+			<td class=aligned>
+				-
+			</td>
+			
+			<td class=aligned>
+				-
+			</td>
+		</tr>
+<!-------------------------7 raw------------------------------>
+<!-------------------------8 raw------------------------------>
+		<tr class=cur>
+			<td class=aligned>
+				<a href=6111.html ><span class=big>61 x 11 (для прибора Литвинова)</span></a>	
+			</td>
+
+			<td class=aligned>
+				60
+			</td>
+
+			<td class=aligned>
+				216
+			</td>
+
+			<td class=aligned>
+				-
+			</td>
+			
+			<td class=aligned>
+				16 комплектов
+			</td>
+		</tr>
+<!-------------------------8 raw------------------------------>
+<!-------------------------9 raw------------------------------>
+		<tr >
+			<td class=aligned>
+			
+				<a href=8020.html ><span class=big>80 x 20</span></a>	
+			</td>
+
+			<td class=aligned>
+				160
+			</td>
+
+			<td class=aligned>
+				-
+			</td>
+
+			<td class=aligned>
+				-
+			</td>
+			
+			<td class=aligned>
+				-
+			</td>
+		</tr>
+<!-------------------------9 raw------------------------------>
+<!-------------------------10 raw------------------------------>
+		<tr class=cur>
+			<td class=aligned>
+				<a href=8040.html ><span class=big>80 x 40</span></a>	
+			</td>
+
+			<td class=aligned>
+				170
+			</td>
+
+			<td class=aligned>
+				-
+			</td>
+
+			<td class=aligned>
+				-
+			</td>
+			
+			<td class=aligned>
+				-
+			</td>
+		</tr>
+<!-------------------------10 raw------------------------------>
+<!-------------------------11 raw------------------------------>
+		<tr>
+			<td class=aligned>
+			
+				<a href=8050.html ><span class=big>80 x 50</span></a>	
+			</td>
+
+			<td class=aligned>
+				180
+			</td>
+
+			<td class=aligned>
+				-
+			</td>
+
+			<td class=aligned>
+				-
+			</td>
+			
+			<td class=aligned>
+				-
+			</td>
+		</tr>
+<!-------------------------11 raw------------------------------>
+<!-------------------------12 raw------------------------------>
+		<tr class=cur>
+			<td class=aligned>
+				<a href=13697.html ><span class=big>136 x 97</span></a>	
+			</td>
+
+			<td class=aligned>
+				600
+			</td>
+
+			<td class=aligned>
+				-
+			</td>
+
+			<td class=aligned>
+				-
+			</td>
+			
+			<td class=aligned>
+				-
+			</td>
+		</tr>
+<!-------------------------12 raw------------------------------>
+<!-------------------------13 raw------------------------------>
+		<tr>
+			<td class=aligned>
+				
+				<a href=13746.html ><span class=big>137 x 46</span></a>
+			</td>
+
+			<td class=aligned>
+				400
+			</td>
+
+			<td class=aligned>
+				-
+			</td>
+
+			<td class=aligned>
+				-
+			</td>
+			
+			<td class=aligned>
+				-
+			</td>
+		</tr>
+<!-------------------------13 raw------------------------------>
+<!-------------------------14 raw------------------------------>
+		<tr class=cur>
+			<td class=aligned>
+				<a href=1007060.html ><span class=big>100/70 x 60 (форма конус)</span></a>	
+			</td>
+
+			<td class=aligned>
+				900
+			</td>
+
+			<td class=aligned>
+				-
+			</td>
+
+			<td class=aligned>
+				-
+			</td>
+			
+			<td class=aligned>
+				-
+			</td>
+		</tr>
+<!-------------------------14 raw------------------------------>
+<!-------------------------15 raw------------------------------>
+		<tr>
+			<td class=aligned>
+			
+				<a href=1447028.html ><span class=big>144/70 x 28 (насадка)</span></a>
+			</td>
+
+			<td class=aligned>
+				900
+			</td>
+
+			<td class=aligned>
+				-
+			</td>
+
+			<td class=aligned>
+				-
+			</td>
+			
+			<td class=aligned>
+				-
+			</td>
+		</tr>
+<!-------------------------15 raw------------------------------>
+		</table>
+	</td>
+	</tr>
+<tr class=cur valign=center>
+	<td  colspan=2 height=31>
+	<div align=center>
+	Последнее обновление:  	  <?php
+        $DOCUMENT_ROOT=$_SERVER['DOCUMENT_ROOT'];
+        @ $fp=fopen("$DOCUMENT_ROOT/files/update.txt",'rb');
+        if(!$fp){echo '24.09.2005';exit;
+        }else{
+                @ $str=fgets($fp,100);
+                if($str!=NULL){echo $str;}else{echo '24.09.2005';};
+                fclose($fp);
+        };
+        
+        ?>
+	</div>
+	</td>
+
+	<td height=31>
+	<div align=center>
+<!-- SpyLOG f:0211 -->
+<script language="javascript"><!--
+Mu="u6854.37.spylog.com";Md=document;Mnv=navigator;Mp=0;
+Md.cookie="b=b";Mc=0;if(Md.cookie)Mc=1;Mrn=Math.random();
+Mn=(Mnv.appName.substring(0,2)=="Mi")?0:1;Mt=(new Date()).getTimezoneOffset();
+Mz="p="+Mp+"&rn="+Mrn+"&c="+Mc+"&t="+Mt;
+if(self!=top){Mfr=1;}else{Mfr=0;}Msl="1.0";
+//--></script><script language="javascript1.1"><!--
+Mpl="";Msl="1.1";Mj = (Mnv.javaEnabled()?"Y":"N");Mz+='&j='+Mj;
+//--></script><script language="javascript1.2"><!-- 
+Msl="1.2";Ms=screen;Mpx=(Mn==0)?Ms.colorDepth:Ms.pixelDepth;
+Mz+="&wh="+Ms.width+'x'+Ms.height+"&px="+Mpx;
+//--></script><script language="javascript1.3"><!--
+Msl="1.3";//--></script><script language="javascript"><!--
+My="";My+="<a href='http://"+Mu+"/cnt?cid=685437&f=3&p="+Mp+"&rn="+Mrn+"' target='_blank'>";
+My+="<img src='http://"+Mu+"/cnt?cid=685437&"+Mz+"&sl="+Msl+"&r="+escape(Md.referrer)+"&fr="+Mfr+"&pg="+escape(window.location.href);
+My+="' border=0 width=88 height=31 alt='SpyLOG'>";
+My+="</a>";Md.write(My);//--></script><noscript>
+<a href="http://u6854.37.spylog.com/cnt?cid=685437&f=3&p=0" target="_blank">
+<img src="http://u6854.37.spylog.com/cnt?cid=685437&p=0" alt='SpyLOG' border='0' width=88 height=31 >
+</a></noscript>
+<!-- SpyLOG -->
+	</div>
+	</td>
+
+	<td  colspan=2>
+	<div align=right>
+	Разработка - <a href=mailto:sclad@pisem.net>menski&nbsp;</a>
+	</div>
+	</td>
+</tr>
+</table>
+
+</body>
+</html>

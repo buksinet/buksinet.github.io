@@ -1,0 +1,160 @@
+<?php
+        $DOCUMENT_ROOT=$_SERVER['DOCUMENT_ROOT'];
+        @ $ffp=fopen("$DOCUMENT_ROOT/files/hide.txt",'rb');
+        if(!$ffp)
+		{
+			exit;
+        }else
+		{
+                @ $sstr=fgets($ffp,5);
+                fclose($ffp);
+				if($sstr == 'hide')
+				{
+					exit;
+				}
+        }
+        
+?>
+<script language="javascript"><!--
+Md=document;
+Ms=screen;
+Mw=Ms.width;
+Mh=Ms.height;
+//--></script>
+<html>
+<head>
+        <link rel=stylesheet type=text/css href=styles.css>
+
+	<title>:: Бюксы - Ваш заказ успешно обработан ::</title>	
+
+</head>
+
+<body>
+<table width=100%  cellspacing=0 cellpadding=0>
+       <tr >
+		<td colspan=5>
+			<table class=fixed width=100% cellspacing=0 cellpadding=0>
+			<tr>
+				<td height=100 width=162>
+					<img src=pic/hl.jpg hspace=0 vspace=0  height=100 width=162>
+				</td>
+				<script language="javascript"><!--
+					if(Mw==800){
+						Md.write('<td valign=middle width=511 background=pic/800/m.jpg>');
+					}else{Md.write('<td valign=middle width=734 background=pic/m.jpg>');
+					};
+				//--></script>
+				<noscript>
+					<td valign=middle width=734 background=pic/m.jpg>
+				</noscript>
+				<div align=center >
+					<span class=head>buksi.net</span><br>
+					<span class=head>Бюксы лабораторные алюминиевые</span>
+				</div>
+				</td>
+				<td height=100 >
+					<img src=pic/hr.jpg hspace=0 vspace=0 width=103 height=100>
+				</td>
+			</tr>
+
+			</table>
+		</td> 
+	</tr>
+	 <tr valign=middle>
+		<td class=aligned background=pic/menu.jpg width=20% height=30>
+			<div align=center>
+			<a href=index.html><span class=menu>Главная</span></a>
+			</div>
+			
+		</td>
+		<td class=aligned background=pic/menu.jpg width=20%> 
+			<div align=center>
+		
+			<a href=prod.html><span class=menu>Характеристики и цены</span></a>
+			</div>
+		</td>
+		<td class=aligned background=pic/menu.jpg width=20%>
+			<div align=center>
+			
+			<a href=nal.html><span class=menu>Наличие по городам</span></a>
+			</div>
+		</td>
+		<td class=aligned background=pic/menu.jpg width=20%>
+			<div align=center>
+		
+			<a href=order.html><span class=menu>Заказать</span></a>
+			</div>
+		</td>
+		<td class=aligned background=pic/menu.jpg width=20%>
+			<div align=center>
+			
+			<a href=contact.html><span class=menu>Контакты</span></a>
+			</div>
+		</td>
+	</tr>
+        <tr >
+        <td colspan=5>
+
+                <table width=100%  height=100% cellspacing=0 cellpadding=7 border=0>
+                <tr>
+                        <td width=20%>
+                                &nbsp;
+                        </td>
+
+                        <td width=60% valign=middle>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<div align=center>
+			<p>К сожалению в данный момент ваш запрос не может быть обработан.
+				Попробуйте позже либо свяжитесь с нами по <a href=contact.html>телефону или e-mail</a>.
+                                </p>
+			</div>
+			<br>
+                        <hr>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+                        </td>
+                        <td width=20%>
+                                 &nbsp;
+                        </td>
+                </tr>
+                </table>
+        </td>
+        </tr>
+<tr class=cur valign=center>
+	<td  colspan=2 height=31>
+	<div align=center>
+	Последнее обновление - 14.09.2005
+	</div>
+	</td>
+
+	<td height=31>
+	<div align=center>
+&nbsp;
+	</div>
+	</td>
+
+	<td  colspan=2>
+	<div align=right>
+	Разработка - <a href=mailto:sclad@pisem.net>menski&nbsp;</a>
+	</div>
+	</td>
+</tr>
+</table>
+
+</body>
+</html>
